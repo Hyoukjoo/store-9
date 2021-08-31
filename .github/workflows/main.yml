@@ -59,4 +59,4 @@ jobs:
       - name: Docker run
         run: |
           docker ps -a -q --filter "name=store-client" | grep -q . && docker stop store-client && docker rm -fv store-client 
-          docker run -d -p 80:80 --name store-client --restart always ${{ env.DOCKER_IMAGE }}:${{ env.VERSION }}
+          docker run -d -p 80:8080 --name store-client --restart always ${{ env.DOCKER_IMAGE }}:${{ env.VERSION }}
