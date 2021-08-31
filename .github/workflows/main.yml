@@ -5,7 +5,7 @@ on:
     branches: [dev]
 
 env:
-  DOCKER_IMAGE: ghcr.io/woowa-techcamp-2021/store-9
+  DOCKER_IMAGE: ghcr.io/hyoukjoo/store-9
   VERSION: ${{ github.sha }}
 
 jobs:
